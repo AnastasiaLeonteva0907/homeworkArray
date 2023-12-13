@@ -17,3 +17,17 @@ Console.Clear();
 // result++;
 // Console.WriteLine(result);
 
+//Задача 2: Задайте массив на 10 целых чисел. Напишите программу, которая определяет количество чётных чисел в массиве.
+
+// Console.Write("Введите кол-во элементов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// for(int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(1, 101);
+// Console.WriteLine(string.Join(", ", array));
+
+// int result = 0;
+// for(int i = 0; i < array.Length; i++)
+// if(array[i] % 2 == 0)
+// result++;
+// Console.WriteLine($"Количество четных чисел: {result}");
