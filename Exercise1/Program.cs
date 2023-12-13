@@ -31,3 +31,38 @@ Console.Clear();
 // if(array[i] % 2 == 0)
 // result++;
 // Console.WriteLine($"Количество четных чисел: {result}");
+
+// Задача 3: Задайте массив из вещественных чисел с ненулевой дробной частью. Найдите разницу между максимальным и минимальным элементов массива.
+
+// double [] array = new double [n1];
+// double str;
+// for(int i = 0; i < n1; i++)
+//     array[i] = new Random().Next(1, 101);
+// Console.WriteLine(string.Join(", ", array));
+
+// Random rand = new Random();
+// Console.Write("Введите кол-во элементов: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// double [] array = new int [n];
+// for(int i = 0; i < n; i++)
+// Console.WriteLine(string.Join(", ", array));
+
+// Верный вариант
+// // Создаем массив с 10 вещественными числами
+
+// Random rnd = new Random();
+// double [] array = Enumerable.Range(0, 10).Select(x => rnd.NextDouble() * 10 + 5).ToArray();
+// Console.WriteLine(string.Join(", ", array));
+
+// // Находим минимальное и максимальное значение в массиве
+
+// double minValue = array.Min();
+// double maxValue = array.Max();
+
+// // Разница между максимальным и минимальным
+
+// double Difference = maxValue - minValue;
+
+// Console.WriteLine($"Минимальный элемент: {minValue}");
+// Console.WriteLine($"Максимальный элемент: {maxValue}");
+// Console.WriteLine($"Разница элементов: {Difference}");
