@@ -66,3 +66,30 @@ Console.Clear();
 // Console.WriteLine($"Минимальный элемент: {minValue}");
 // Console.WriteLine($"Максимальный элемент: {maxValue}");
 // Console.WriteLine($"Разница элементов: {Difference}");
+
+
+// Задача 4**(не обязательно): Дано натуральное число в диапазоне от 1 до 100 000. Создайте массив, состоящий из цифр этого числа.
+// Старший разряд числа должен располагаться на 0-м индексе массива, младший – на последнем. 
+// Размер массива должен быть равен количеству цифр.
+
+int n = new Random().Next(1, 100000);
+Console.WriteLine(n);
+int[] array = new int[n];
+
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = n % 10000;
+    n /= 100000;
+}
+Console.WriteLine(string.Join(", ", array));
+
+// int[] arr = array[i];
+
+// for (int i = 0; i < arr.Length; i++)
+// {
+//    int Fix = array[i];
+//    array [i] = array[array.Length-i-1];
+//    array[array.Length-i-1] = Fix;
+// }
+// Console.WriteLine(string.Join(", ", array));
+
